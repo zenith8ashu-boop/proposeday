@@ -56,7 +56,7 @@ function updateStars() {
 const button = document.getElementById("valentinesButton");
 
 button.addEventListener("click", () => {
-  if (button.textContent === "Click Me! ❤") {
+  if (button.textContent === "If Yes, Click Me! ❤") {
     button.textContent = "loading...";
     fetch("send_mail.php")
       .then((response) => {
@@ -334,5 +334,6 @@ window.addEventListener("resize", function () {
   canvas.height = window.innerHeight;
   baseFrame = context.getImageData(0, 0, window.innerWidth, window.innerHeight);
 });
+
 
 window.requestAnimationFrame(draw);
